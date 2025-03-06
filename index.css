@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'MyFont';  /* 원하는 폰트 이름 */
+    src: url('BlackHanSans-Regular.ttf') format('truetype');
+
+        
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+   z-index: 11;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+ 
+    
+    padding: 20px;
+    position: fixed;
+    height: 70px;
+    
+   
+}
+
+.buttones{
+    margin-left: 200px;
+}
+button{
+    border: none;
+    background-color: unset; 
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.background-img {
+    position: relative; /* 추가 */
+    font-family: 'MyFont', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    font-size: 4rem;
+    background-color: rgba(112, 93, 80, 0.8); /* 배경 투명도 조절 */
+}
+
+
+.background-img::before {
+    content: "";
+    position: absolute; /* 부모 요소(.background-img)를 기준으로 배치 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: url('배경사진.jpg') center/cover no-repeat;
+   
+    z-index: -1; /* 글자보다 뒤쪽으로 보내기 */
+}
+.section-about-me {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    padding-top: 60px; /* 헤더 높이만큼 여백 추가 */
+}
+.section-skills {
+    height: 400px;
+    width: 100%;
+    background-color: #f9c51d;
+    padding-top: 60px; /* 헤더 높이만큼 여백 추가 */
+}
+.section-projects {
+    height: 400px;
+    width: 100%;
+    background-color: #222222;
+    padding-top: 60px; /* 헤더 높이만큼 여백 추가 */
+}
+
+.about-me-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-me-title{
+    font-size: 3rem;
+    font-family: 'MyFont', serif;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+.about-me-info{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 165px;
+}
+.about-me-top{
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: space-around;
+    width: 1200px;
+}
+.about-me-bottom{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    width: 1200px;
+}
+.about-me-ikon-name{
+    padding: 20px;
+    padding-right: 50px;
+    height: 80px;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+.about-me-ikon-school{
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 16px;
+
+    height: 80px;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.about-me-ikon i{
+    font-size: 2rem;
+    padding-right: 50px;
+}
+.about-me-ikon-school .about-me-ikon i{
+    padding-right: 43px;
+    font-size: 1.8rem;
+    
+}
+
+.about-me-ikon-name{
+    display: flex;
+    
+}
+.about-me-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #212529;
+
+}
+
+.about-me-name{
+    margin-bottom: 15px;
+}
